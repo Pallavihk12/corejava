@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-like Page</title>
+    <style>
+        body {
+            margin: 0;
+            
+            color: #e7c9e2;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #ffffff;
+        }
+
+        .navbar .left-section {
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar .search-bar {
+            display: flex;
+            align-items: center;
+            flex: 1em;
+            size: 100;
+            outline: black;
+            float: right;
+            border: #130f0f;
+
+        }
+        .navbar .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid;
+            border-radius: 25px 0 0 25px;
+            outline: bold;
+            background-color: white;
+            color: hsl(0, 14%, 11%);
+            float: right;
+            margin-left: 400px;
+        }
+        .navbar .search-bar button {
+            padding: 10px;
+            border: 2px solid;
+        
+            border-radius: 0 25px 25px 0;
+            background-color: #f0e7e7;
+            color: hsl(0, 7%, 5%);
+            cursor: pointer;
+        }
+        .navbar .icons {
+            display: flex;
+            align-items: center;
+        }
+        
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+            color: black;
+        }
+        .video-container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .channel-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #b0b0b0;
+            border-radius: 10px;
+        }
+        .channel-info .left-section {
+            display: flex;
+            align-items: center;
+        }
+        .channel-info .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            color: #130f0f;
+        }
+        
+        .channel-info .subscribe-btn {
+            background-color: rgb(223, 79, 79);
+            color: #fff;
+            border: none;
+            border-radius: 2px;
+            padding: 10px 16px;
+            border-radius: 25px  25px 25px 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .channel-info .actions {
+            display: flex;
+            align-items: center;
+        }
+        
+      
+        .sidebar {
+            flex: 1;
+            background-color: hsl(0, 30%, 96%);
+            padding: 20px;
+            border-radius: 10px;
+            gap: 1rem;
+        }
+        .sidebar .video {
+            display: flex;
+            margin-bottom: 30px;
+            gap: 1.5rem;
+        }
+        
+        .sidebar .video-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .sidebar .video-info h4 {
+            margin: 0;
+            font-size: 14px;
+            color: black;
+        }
+        .sidebar .video-info p {
+            margin: 0;
+            font-size: 12px;
+            color: #aaa;
+        }
+        
+        .like{
+            width: 5vh;
+            height: 3vh;
+
+
+        }
+    </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+</head>
+<body><div>
+    <div class="navbar">
+        <div class="left-section">
+            <img src="u.jpg" style="height:40px ; width: 60px;" alt="YouTube Logo">
+             <div class="search-bar">
+                <input id="search" placeholder="Search" size="70" style="outline-color: black;">
+                <button><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+            
+            </div>
+        </div>
+       
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <div class="video-container">
+                <iframe style="border: none; border-radius:  15px  15px 15px 15px;" width="100%" height="500px" src="https://www.youtube.com/embed/LK7-_dgAVQE?si=XGu3LNEELec7GWty" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<article>
+    <h3>Tauba Tauba | Bad Newz | Vicky Kaushal | Triptii Dimri | Karan Aujla | In cinemas 19th July</h3>
+</article>
+            <div class="channel-info">
+                <div class="left-section">
+                    <img class="profile-pic" src="mango.jpg" alt="Profile Picture">
+                    <div style="display: flex; flex-direction: column;">
+                        <div style="font-weight: bold;">Mango-Kannad</div>
+                        <div style="font-size: 14px;color: #130f0f;">132K subscribers</div>
+                    </div>
+                </div>
+                <button class="subscribe-btn">Subscribe</button>
+                <div class="actions">
+                    <img src="like-dislike-comment-and-share-icon-social-media-promotion-vector.jpg" width="240px" height="40px">
+             
+            </div>
+            </div>
+        </div>
+     <div>
+        <div class="sidebar">
+            <div class="video" >
+                <iframe  style="border-radius: 10px  10px 10px 10px;" width="168" height="94" src="https://www.youtube.com/embed/hSJUrOA8w4Y?si=LXccZUe0aopR7m6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-info">
+                    <h4>GEETHANJALI || REPRISE VERSION || SURAJ ||</h4>
+                    <p>Suraj KM • 6M views</p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe style="border-radius: 10px 10px 10px 10px ;" width="168" height="95" src="https://www.youtube.com/embed/vzIFlt4fUbM?si=adVsFsqpTQNATPdV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+                <div class="video-info">
+                    <h4>Yuva || REPRISE VERSION || SURAJ KM ||</h4>
+                    <p>Suraj KM • 440k views</p>
+                </div>
+            </div>
+            <div class="video">
+                
+     <iframe style="border-radius: 10px 10px 10px 10px ;" width="168" height="95" src="https://www.youtube.com/embed/aQr3-svRGUI?si=wEJXtEbrwePCpQCx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+                <div class="video-info">
+                    <h4>Kotigobba || Kiccha Sudeep</h4>
+                    <p>Sun Tv • 45M views</p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe style="border-radius: 10px 10px 10px 10px ;" width="168" height="95"  src="https://www.youtube.com/embed/JTpDCoxZdv8?si=3NUuuuP1n5xbBln8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+                <div class="video-info">
+                    <h4>Kushi- Marete Hodenu Unplugged |</h4>
+                    <p>JP Music • 20M views</p>
+                </div>
+            </div>
+            <div class="video">
+                <iframe style="border-radius: 10px 10px 10px 10px ;" width="168" height="95"  src="https://www.youtube.com/embed/qoq8B8ThgEM?si=DAcia9lQfWmjvomJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+            
+                <div class="video-info">
+                    <h4>Mundina Nildana - Innunu Bekagide</h4>
+                    <p>PRK Audio • 14M views</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
